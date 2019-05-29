@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Build production file'){
             steps{
-                bat 'rpm build'
+                bat 'rpm run build'
             }
         }
         
