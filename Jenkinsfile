@@ -20,6 +20,11 @@ pipeline {
                 bat 'npm run testecho'
             }
         }
+        stage('Test1') {
+            steps {
+                bat 'npm run testecho'
+            }
+        }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
