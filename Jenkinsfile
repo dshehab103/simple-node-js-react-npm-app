@@ -21,9 +21,9 @@ pipeline {
             }
         }
 
-        stage('eject') {
+        stage('test1') {
             steps {
-                bat 'npm run eject'
+                bat 'npm run  --env=jsdom'
             }
         }
         
