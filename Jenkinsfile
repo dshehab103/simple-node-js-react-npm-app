@@ -23,7 +23,7 @@ pipeline {
 
         stage('test1') {
             steps {
-                bat 'npm run  --env=jsdom'
+                bat 'npm run test --env=jsdom'
             }
         }
         
