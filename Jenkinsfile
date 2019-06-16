@@ -21,11 +21,7 @@ pipeline {
             }
         }
 
-        stage('test1') {
-            steps {
-                bat 'npm run test'
-            }
-        }
+        
         
         stage('Deploy') {
             steps {
