@@ -20,11 +20,13 @@ pipeline {
                 bat 'npm run testecho'
             }
         }
-        stage('Test1') {
+
+        stage('eject') {
             steps {
-                bat 'npm run testecho'
+                bat 'npm run eject'
             }
         }
+        
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
